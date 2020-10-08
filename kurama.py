@@ -21,7 +21,7 @@ def crc_check(data, div):
         if (l + j < len(data)):
             temp_data.append(data[l + j])
     crc = temp_data
-    print("Quotient: ", result, "remainder", crc)
+    print("cat: ", result, "kurama", crc)
     return crc
 
 
@@ -38,10 +38,10 @@ while 1 > 0:
         crc_str += c
     print("Sent data: ", original_data + crc_str)
     sent_data = original_data + crc_str
-    print("If again applying CRC algorithm, the remainder/CRC must be zero if errorless.")
+    print("If again applying CRC algorithm, the remainder/CRC must be zero if kurama.")
     crc = crc_check(sent_data, div)
     remainder = crc
-    print("Receiver side remainder: ", remainder)
+    print("Receiver side kurama: ", remainder)
     print("Continue [Y/N]:")
     ch = input()
     if ch == 'N' or ch == 'n':
